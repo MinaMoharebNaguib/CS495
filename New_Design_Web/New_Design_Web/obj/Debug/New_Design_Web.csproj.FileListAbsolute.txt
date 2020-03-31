@@ -1,0 +1,6 @@
+C:\Users\Mina Mohareb Naguib\Desktop\Design Web\CS495\New_Design_Web\New_Design_Web\bin\New_Design_Web.dll.config
+C:\Users\Mina Mohareb Naguib\Desktop\Design Web\CS495\New_Design_Web\New_Design_Web\bin\New_Design_Web.dll
+C:\Users\Mina Mohareb Naguib\Desktop\Design Web\CS495\New_Design_Web\New_Design_Web\bin\New_Design_Web.pdb
+C:\Users\Mina Mohareb Naguib\Desktop\Design Web\CS495\New_Design_Web\New_Design_Web\obj\Debug\New_Design_Web.csprojAssemblyReference.cache
+C:\Users\Mina Mohareb Naguib\Desktop\Design Web\CS495\New_Design_Web\New_Design_Web\obj\Debug\New_Design_Web.dll
+C:\Users\Mina Mohareb Naguib\Desktop\Design Web\CS495\New_Design_Web\New_Design_Web\obj\Debug\New_Design_Web.pdb
