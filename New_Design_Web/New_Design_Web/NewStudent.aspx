@@ -15,6 +15,9 @@
         .auto-style3 {
             height: 865px;
         }
+        .auto-style4 {
+            width: 252px;
+        }
     </style>
 </head>
 <body>
@@ -35,8 +38,12 @@
                     <td>
                         <asp:TextBox ID="txtFName" runat="server" Width="260px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtFName" ErrorMessage="Please Enter Your Frist Name"></asp:RequiredFieldValidator>
+                    </td>
+                    <td>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtFName" ErrorMessage="Sure Enter Your really First Name" ValidationExpression="[A-Z][a-z]*"></asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
@@ -45,8 +52,12 @@
                     <td>
                         <asp:TextBox ID="txtMName" runat="server" Width="260px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtMName" ErrorMessage="Please Enter Your Middle Name"></asp:RequiredFieldValidator>
+                    </td>
+                    <td>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtMName" ErrorMessage="Sure Enter Your really Middle Name" ValidationExpression="[A-Z][a-z]*"></asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
@@ -55,8 +66,12 @@
                     <td>
                         <asp:TextBox ID="txtLName" runat="server" Width="260px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtLName" ErrorMessage="Please Enter Your Last Name"></asp:RequiredFieldValidator>
+                    </td>
+                    <td>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtLName" ErrorMessage="Sure Enter Your really Last Name" ValidationExpression="[A-Z][a-z]*"></asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
@@ -69,7 +84,7 @@
                             <asp:ListItem>UAE</asp:ListItem>
                         </asp:DropDownList>
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -82,7 +97,9 @@
                             <asp:ListItem>Female</asp:ListItem>
                         </asp:RadioButtonList>
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="Gender" ErrorMessage="Please Enter Gender"></asp:RequiredFieldValidator>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -92,8 +109,12 @@
                     <td>
                         <asp:TextBox ID="txtEmail" runat="server" Width="260px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please Enter Your Email"></asp:RequiredFieldValidator>
+                    </td>
+                    <td>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email invalid" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
@@ -111,7 +132,7 @@
                             <WeekendDayStyle BackColor="#CCCCFF" />
                         </asp:Calendar>
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -121,8 +142,12 @@
                     <td>
                         <asp:TextBox ID="txtID" runat="server" Width="260px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtID">Please Enter Your ID</asp:RequiredFieldValidator>
+                    </td>
+                    <td>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="txtID" ErrorMessage="Please Enter Number ID" ValidationExpression="\d{8}"></asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
@@ -131,8 +156,12 @@
                     <td>
                         <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" Width="260px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtPassword" ErrorMessage="Please Enter Password"></asp:RequiredFieldValidator>
+                    </td>
+                    <td>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="txtPassword" ErrorMessage="Sure Enter Charc and number" ValidationExpression="\w{8,50}"></asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
@@ -141,8 +170,12 @@
                     <td>
                         <asp:TextBox ID="txtRePassword" runat="server" TextMode="Password" Width="260px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtRePassword" ErrorMessage="Please Enter agen Password"></asp:RequiredFieldValidator>
+                    </td>
+                    <td>
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtPassword" ControlToValidate="txtRePassword" ErrorMessage="inviled Re-Password"></asp:CompareValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
@@ -154,7 +187,7 @@
                             <asp:ListItem>No</asp:ListItem>
                         </asp:CheckBoxList>
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -164,7 +197,7 @@
                     <td>
                         <asp:FileUpload ID="Image" runat="server" Font-Bold="True" Font-Names="Arial Black" Font-Size="Small" ForeColor="#000066" Width="260px" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -174,7 +207,7 @@
                     <td>
                         <asp:TextBox ID="txtPhone" runat="server" Width="260px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
